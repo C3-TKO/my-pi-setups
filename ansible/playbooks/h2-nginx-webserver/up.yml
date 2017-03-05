@@ -1,0 +1,15 @@
+---
+- hosts: all
+  vars:
+    http_port: 80
+    max_clients: 200
+  become: yes
+  become_method: sudo
+  tasks:
+  - name: Update apt cache.
+    apt: update_cache=yes cache_valid_time=86400
+    changed_when: false
+  - name: Ensure nginx is installed.
+    apt:
+      name: nginx
+      state: installed
