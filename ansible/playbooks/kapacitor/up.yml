@@ -1,0 +1,16 @@
+---
+- hosts: kapacitor
+  become: yes
+  become_method: sudo
+  gather_facts: False
+  pre_tasks:
+  - name: Install python for Ansible
+    raw: test -e /usr/bin/python || (apt -y update && apt install -y python-minimal)
+    register: output
+    changed_when: output.stdout != ""
+  - setup: # aka gather_facts
+
+  tasks:
+  - name: Update apt cache.
+    apt: update_cache=yes cache_valid_time=86400
+    changed_when: false

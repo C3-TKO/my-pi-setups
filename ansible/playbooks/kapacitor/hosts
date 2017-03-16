@@ -1,0 +1,8 @@
+[nginx-h/2]
+192.168.125.3 ansible_user=ubuntu
+
+[influxdb]
+192.168.125.6 ansible_user=ubuntu
+
+[kapacitor]
+192.168.125.6 ansible_user=ubuntu
