@@ -1,0 +1,9 @@
+---
+- name: Install influxdb
+  hosts: influxdb
+  become: yes
+  become_method: sudo
+
+  roles:
+    - common
+    - influxdb
