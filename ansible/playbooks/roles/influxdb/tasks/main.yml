@@ -9,4 +9,3 @@
 - name: Copy InfluxDB configuration
   template: src=influxdb.conf dest=/etc/influxdb/influxdb.conf
   notify: restart influxdb
-  

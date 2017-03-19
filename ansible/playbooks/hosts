@@ -1,4 +1,4 @@
-[nginx-h/2]
+[nginx]
 192.168.125.3 ansible_user=ubuntu
 
 [influxdb]
