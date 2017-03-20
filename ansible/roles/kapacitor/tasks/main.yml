@@ -1,0 +1,28 @@
+# Based on https://github.com/rossmcdonald/kapacitor/blob/master/tasks/install-debian.yml
+---
+- name: Install any necessary dependencies [Debian/Ubuntu]
+  apt:
+    name: "{{ item }}"
+    state: present
+    update_cache: yes
+    cache_valid_time: 3600
+  with_items:
+    - python-httplib2
+    - python-apt
+    - curl
+
+- name: Import InfluxData GPG signing key [Debian/Ubuntu]
+  apt_key:
+    url: https://repos.influxdata.com/influxdb.key
+    state: present
+
+- name: Add InfluxData repository [Debian/Ubuntu]
+  apt_repository:
+    repo: deb https://repos.influxdata.com/{{ ansible_distribution | lower }} {{ ansible_distribution_release }} stable
+    state: present
+
+- name: Install Kapacitor packages [Debian/Ubuntu]
+  apt:
+    name: kapacitor
+    state: latest
+
