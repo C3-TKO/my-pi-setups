@@ -1,0 +1,3 @@
+[submodule "ansible/roles/influxdb"]
+	path = ansible/roles/influxdb
+	url = git@github.com:C3-TKO/ansible-role-influxdb.git
