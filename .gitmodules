@@ -1,3 +1,9 @@
 [submodule "ansible/roles/influxdb"]
 	path = ansible/roles/influxdb
 	url = git@github.com:C3-TKO/ansible-role-influxdb.git
+[submodule "ansible/roles/kapacitor"]
+	path = ansible/roles/kapacitor
+	url = git@github.com:C3-TKO/ansible-role-kapacitor.git
+[submodule "ansible/roles/nginx"]
+	path = ansible/roles/nginx
+	url = git@github.com:C3-TKO/ansible-role-nginx.git
