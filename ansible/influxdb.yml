@@ -7,3 +7,5 @@
   roles:
     - common
     - influxdb
+  vars_files:
+    - vars/certificates.yml
