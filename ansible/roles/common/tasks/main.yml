@@ -4,3 +4,16 @@
   register: output
   changed_when: output.stdout != ""
 - setup: # aka gather_facts
+- name: Install ufw
+  apt: name=ufw
+- name: Allow ssh through firewall
+  ufw:
+    proto: tcp
+    port: 22
+    rule: allow
+    src: 192.168.125.0/24
+- name: Set ufw policy
+  ufw:
+    state: enabled
+    direction: incoming
+    policy: deny
