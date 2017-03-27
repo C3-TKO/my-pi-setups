@@ -9,3 +9,4 @@
     - influxdb
   vars_files:
     - vars/certificates.yml
+    - vars/influxdb.yml
