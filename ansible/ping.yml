@@ -1,0 +1,12 @@
+---
+- name: Shuts down all Pis
+  hosts: all
+  become: yes
+  become_method: sudo
+  gather_facts: no
+  tasks:
+    - name: shutdown
+      ping:
+
+  roles:
+    - common
