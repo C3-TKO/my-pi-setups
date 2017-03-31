@@ -1,0 +1,8 @@
+---
+- name: Base setup for banana pi
+  hosts: banana-pi
+
+  roles:
+#    - common Setup of python via raw module does not work for bananian
+# Python2 needs to be installed on the banana pi @see: https://github.com/ansible/ansible/issues/13600
+    - banana-pi-base

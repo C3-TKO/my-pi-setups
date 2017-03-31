@@ -7,3 +7,6 @@
 [submodule "ansible/roles/nginx"]
 	path = ansible/roles/nginx
 	url = git@github.com:C3-TKO/ansible-role-nginx.git
+[submodule "ansible/roles/ansible-role-bananapi-base"]
+	path = ansible/roles/ansible-role-bananapi-base
+	url = git@github.com:C3-TKO/ansible-role-bananapi-base.git
