@@ -1,0 +1,10 @@
+---
+- name: Installs and configures redis
+  hosts: redis
+  become: yes
+  become_method: sudo
+  gather_facts: no
+
+  roles:
+    - common
+    - redis

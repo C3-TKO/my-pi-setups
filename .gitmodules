@@ -13,3 +13,6 @@
 [submodule "ansible/roles/banana-pi-base"]
 	path = ansible/roles/banana-pi-base
 	url = git@github.com:C3-TKO/ansible-role-bananapi-base.git
+[submodule "ansible/roles/redis"]
+	path = ansible/roles/redis
+	url = git@github.com:C3-TKO/ansible-role-redis.git
