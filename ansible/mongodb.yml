@@ -1,0 +1,10 @@
+---
+- name: Installs and configures mongoDB
+  hosts: mongodb
+  become: yes
+  become_method: sudo
+  gather_facts: no
+
+  roles:
+    - common
+    - mongodb

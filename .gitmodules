@@ -16,3 +16,6 @@
 [submodule "ansible/roles/redis"]
 	path = ansible/roles/redis
 	url = git@github.com:C3-TKO/ansible-role-redis.git
+[submodule "ansible/roles/mongodb"]
+	path = ansible/roles/mongodb
+	url = git@github.com:C3-TKO/ansible-role-mongodb.git
