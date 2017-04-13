@@ -1,5 +1,5 @@
 ---
-- name: Install influxdb
+- name: Install kapacitor
   hosts: kapacitor
   become: yes
   become_method: sudo
