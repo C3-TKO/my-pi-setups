@@ -19,3 +19,9 @@
 [submodule "ansible/roles/mongodb"]
 	path = ansible/roles/mongodb
 	url = git@github.com:C3-TKO/ansible-role-mongodb.git
+[submodule "ansible/roles/mysql"]
+	path = ansible/roles/mysql
+	url = git@github.com:C3-TKO/ansible-role-mysql.git
+[submodule "ansible/roles/elasticsearch"]
+	path = ansible/roles/elasticsearch
+	url = git@github.com:C3-TKO/ansible-role-elasticsearch.git
