@@ -1,0 +1,11 @@
+---
+- name: Install mySQL
+  hosts: mysql
+  become: yes
+  become_method: sudo
+
+  roles:
+    - common
+    - mysql
+  vars_files:
+    - vars/mysql.yml
