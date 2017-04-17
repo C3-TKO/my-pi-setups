@@ -22,3 +22,6 @@
 [submodule "ansible/roles/elasticsearch"]
 	path = ansible/roles/elasticsearch
 	url = git@github.com:C3-TKO/ansible-role-elasticsearch.git
+[submodule "ansible/roles/mysql"]
+	path = ansible/roles/mysql
+	url = https://github.com/geerlingguy/ansible-role-mysql
