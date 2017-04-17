@@ -1,10 +1,10 @@
 ---
-- name: Installs and configures mysql
-  hosts: mysql
+- name: Installs and configures elasticsearch
+  hosts: elasticsearch
   become: yes
   become_method: sudo
   gather_facts: no
 
   roles:
     - common
-    - mysql
+    - elasticsearch
