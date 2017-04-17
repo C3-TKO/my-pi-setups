@@ -9,3 +9,11 @@
     - mysql
   vars_files:
     - vars/mysql.yml
+
+  tasks:
+    - name: Allow access from local lan
+      ufw:
+        proto: tcp
+        port: "{{ mysql_port }}"
+        rule: allow
+        src: 192.168.125.0/24
