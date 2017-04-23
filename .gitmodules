@@ -25,3 +25,6 @@
 [submodule "ansible/roles/java8"]
 	path = ansible/roles/java8
 	url = https://github.com/malk/ansible-java8-oracle.git
+[submodule "ansible/roles/elasticsearch"]
+	path = ansible/roles/elasticsearch
+	url = git@github.com:C3-TKO/ansible-role-elasticsearch.git
