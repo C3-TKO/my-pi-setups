@@ -12,3 +12,4 @@ The following repos are submodules of ths repository:
 * https://github.com/C3-TKO/ansible-role-bananapi-base
 * https://github.com/C3-TKO/ansible-role-redis
 * https://github.com/C3-TKO/ansible-role-mongodb
+* https://github.com/C3-TKO/ansible-role-certbot
