@@ -31,3 +31,6 @@
 [submodule "ansible/roles/nginx-h2"]
 	path = ansible/roles/nginx-h2
 	url = git@github.com:C3-TKO/ansible-role-nginx-h2.git
+[submodule "ansible/roles/certbot"]
+	path = ansible/roles/certbot
+	url = https://github.com/geerlingguy/ansible-role-certbot.git
